@@ -418,7 +418,7 @@ boolean Plugin_077(byte function, const char *string)
 inline void sendBit(boolean state)
 {
    digitalWrite(Radio::pins::TX_DATA, state ? HIGH : LOW);
-   delayMicroseconds(AVTK_PULSE_DURATION_MID_D*RawSignal.Multiply);
+   delayMicroseconds(AVTK_PULSE_DURATION_MID_D);
 }
 
 inline void sendManchesterBit(bool bit)
